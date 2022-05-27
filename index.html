@@ -10,26 +10,34 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
   <main>
     <img src="./images/illustration-hero.svg" alt="Illustration of a dancing person"/>
-    <h2>Order Summary</h2>
+    <section title="Text section" class="primary-component">
+      <h2 class="title">Order Summary</h2>
 
-    <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-    device anywhere you like!</p>
+      <p class="subtitle">You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
 
-    <div>
-      <img src="./images/icon-music.svg" alt="Music icon"/>
-      Annual Plan
-      $59.99/year
+      <section title="Plan details" class="plan-details">
+        <img src="./images/icon-music.svg" alt="Music icon"/>
+        <section title="Plan Type">
+          <h4>Annual Plan</h4>
+          <span>$59.99/year</span>
+        </section>
 
-      <a href="#">Change</a>
-    </div>
+        <a href="#">Change</a>
+      </section>
 
-    <button>Proceed to Payment</button>
-    <button>Cancel Order</button>
+      <section title="Buttons" class="buttons">
+        <button>Proceed to Payment</button>
+        <button>Cancel Order</button>
+      </section>
+    </section>
   </main>
   <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

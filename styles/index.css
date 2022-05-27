@@ -1,0 +1,77 @@
+body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: white;
+    width: 450px;
+    margin: auto;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.primary-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.primary-component .title {
+    font-weight: 900;
+}
+
+.primary-component .subtitle {
+    margin: 0 10%;
+    text-align: center;
+    color: hsl(224, 23%, 55%)
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.plan-details > a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.plan-details > a:hover {
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons > button {
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 400px) { 
+    body { 
+        background-image: url("../images/pattern-background-mobile.svg")
+    } 
+}
