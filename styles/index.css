@@ -6,14 +6,25 @@ body {
     font-size: 16px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 main {
     background-color: white;
     width: 450px;
-    margin: auto;
-    border-radius: 1em;
+    height: 650px;
+    border-radius: 1.5em;
     overflow: hidden;
+
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 2px 400px 2px hsl(225, 100%, 85%);
+}
+
+main > img {
+    width: 100%;
+    height: auto; 
 }
 
 .primary-component {
@@ -28,9 +39,9 @@ main {
 }
 
 .primary-component .subtitle {
-    margin: 0 10%;
+    margin: 0 5%;
     text-align: center;
-    color: hsl(224, 23%, 55%)
+    color: hsl(224, 23%, 55%);
 }
 
 .plan-details {
@@ -39,26 +50,73 @@ main {
     align-items: center;
     width: 100%;
     background-color: hsl(225, 100%, 98%);
+    border-radius: 0.8em;
+    margin-top: 1.5em;
+
+    box-sizing: border-box; 
+    padding: 1em 1em;
+}
+
+.plan-details > .plan-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+}
+
+#plan-title {
+    font-weight: 700;
+}
+
+#plan-value {
+    color: hsl(224, 23%, 55%);
 }
 
 .plan-details > a {
     color: hsl(245, 75%, 52%);
     font-weight: 700;
+    flex: 1;
+    text-align: right;
 }
 
 .plan-details > a:hover {
     text-decoration: none;
+    color: hsl(245, 75%, 65%);
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-top: 1.5em;
 }
 
 .buttons > button {
     border: none;
     cursor: pointer;
     font-weight: 700;
+}
+
+#continue {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 1em;
+    padding: 1.2em 0;
+}
+
+#continue:hover {
+    background-color: hsl(245, 75%, 65%);
+}
+
+#cancel {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    margin-top: 1.5em;
+}
+
+#cancel:hover {
+    color: black;
 }
 
 .bold-text {
@@ -74,4 +132,21 @@ footer {
     body { 
         background-image: url("../images/pattern-background-mobile.svg")
     } 
+
+    main {
+        width: 340px;
+        height: 540px;
+    }
+
+    main > img {
+        max-width: 340px; 
+    }
+
+    .primary-component {
+        margin: 0 7%;
+    }
+
+    .primary-component .subtitle {
+        margin: 0 7%;
+    }
 }
