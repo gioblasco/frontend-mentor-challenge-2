@@ -37,6 +37,7 @@ main > img {
 .primary-component .title {
     font-weight: 900;
     margin-top: 10%;
+    font-size: 25px;
 }
 
 .primary-component .subtitle {
