@@ -24,4 +24,4 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github solution](https://github.com/gioblasco/frontend-mentor-challenge-2)
-- Live Site URL:
+- Live Site URL: [Vercel App](https://frontend-mentor-challenge-2-b8ogelu4y-gioblasco.vercel.app)
