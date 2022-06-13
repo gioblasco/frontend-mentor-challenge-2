@@ -1,6 +1,6 @@
 body {
     background-image: url("../images/pattern-background-desktop.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
@@ -19,7 +19,7 @@ main {
     overflow: hidden;
 
     /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 0px 2px 400px 2px hsl(225, 100%, 85%);
+    box-shadow: 0px 15px 20px rgba(114, 128, 167, 0.2);
 }
 
 main > img {
@@ -36,6 +36,7 @@ main > img {
 
 .primary-component .title {
     font-weight: 900;
+    margin-top: 10%;
 }
 
 .primary-component .subtitle {
@@ -54,7 +55,7 @@ main > img {
     margin-top: 1.5em;
 
     box-sizing: border-box; 
-    padding: 1em 1em;
+    padding: 1.5em 1.5em;
 }
 
 .plan-details > .plan-type {
@@ -71,6 +72,7 @@ main > img {
 
 #plan-value {
     color: hsl(224, 23%, 55%);
+    margin-top: 5%;
 }
 
 .plan-details > a {
@@ -96,6 +98,7 @@ main > img {
     border: none;
     cursor: pointer;
     font-weight: 700;
+    font-family: inherit;
 }
 
 #continue {
@@ -103,6 +106,7 @@ main > img {
     color: white;
     border-radius: 1em;
     padding: 1.2em 0;
+    box-shadow: 0px 10px 30px rgba(56, 41, 224, 0.3);
 }
 
 #continue:hover {
@@ -112,7 +116,7 @@ main > img {
 #cancel {
     background-color: transparent;
     color: hsl(224, 23%, 55%);
-    margin-top: 1.5em;
+    margin-top: 8%;
 }
 
 #cancel:hover {
@@ -121,11 +125,6 @@ main > img {
 
 .bold-text {
     font-weight: 700;
-}
-
-footer {
-    text-align: center;
-    font-size: 10px;
 }
 
 @media screen and (max-width: 400px) { 
@@ -146,7 +145,19 @@ footer {
         margin: 0 7%;
     }
 
+    .primary-component .title {
+        margin-top: 7%;
+    }
+
     .primary-component .subtitle {
         margin: 0 7%;
+    }
+
+    .plan-details {
+        padding: 1em 1em;
+    }
+
+    #cancel {
+        margin-top: 4%;
     }
 }
